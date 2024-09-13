@@ -39,4 +39,6 @@ transform_makefile_inc("Makefile.am" "${CMAKE_CURRENT_BINARY_DIR}/Makefile.am.cm
 include(${CMAKE_CURRENT_BINARY_DIR}/Makefile.am.cmake)
 
 include(GNUInstallDirs)
-install(FILES ${dist_man_MANS} DESTINATION ${CMAKE_INSTALL_MANDIR}/man3)
+if(NOT LIBSSH2_WITHOUT_INSTALL_FILES AND NOT LIBSSH2_WITHOUT_INSTALL_ALL)
+  install(FILES ${dist_man_MANS} DESTINATION ${CMAKE_INSTALL_MANDIR}/man3)
+endif()
