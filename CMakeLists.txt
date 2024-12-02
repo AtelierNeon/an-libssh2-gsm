@@ -507,7 +507,7 @@ endif()
 
 add_subdirectory(docs)
 
-feature_summary(WHAT ALL)
+#feature_summary(WHAT ALL)
 
 set(CPACK_PACKAGE_VERSION_MAJOR ${LIBSSH2_VERSION_MAJOR})
 set(CPACK_PACKAGE_VERSION_MINOR ${LIBSSH2_VERSION_MINOR})
