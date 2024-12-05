@@ -107,6 +107,7 @@ if(NOT LIBSSH2_VERSION OR
     "Unable to parse version from"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/libssh2.h")
 endif()
+message(STATUS "libssh2 version ${LIBSSH2_VERSION}")
 
 include(GNUInstallDirs)
 if(NOT LIBSSH2_WITHOUT_INSTALL_FILES AND NOT LIBSSH2_WITHOUT_INSTALL_ALL)
